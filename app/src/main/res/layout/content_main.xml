@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mohit.waterjug.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#b2dfdb">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/relativelayout1">
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Enter the capacity of 2 jugs in litres : "
+               android:textSize="25dp"
+               android:textColor="#800000"
+               tools:layout_editor_absoluteX="52dp"
+               tools:layout_editor_absoluteY="43dp"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true"
+               android:layout_marginTop="13dp" />
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="64dp"
+               android:layout_marginTop="21dp"
+               android:text="First jug(A)"
+               android:textSize="22dp"
+               android:textColor="#283593"
+               android:layout_below="@+id/textView"
+               android:layout_alignStart="@+id/editText" />
+
+           <EditText
+               android:id="@+id/editText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="67dp"
+               android:layout_marginTop="14dp"
+               android:ems="10"
+               android:inputType="number"
+               android:text=""
+               android:layout_below="@+id/textView2"
+               android:textAlignment="center"
+               android:layout_alignParentStart="true" />
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="24dp"
+               android:text="Second Jug(B)"
+               android:textSize="22dp"
+               android:textColor="#6d4c41"
+               android:layout_below="@+id/editText"
+               android:layout_alignStart="@+id/editText"
+               android:layout_marginStart="47dp" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="21dp"
+               android:ems="10"
+               android:inputType="number"
+               android:text=""
+               android:layout_below="@+id/textView4"
+               android:layout_alignStart="@+id/editText"
+               android:textAlignment="center"/>
+
+           <Button
+               android:id="@+id/button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Submit"
+               android:layout_below="@+id/editText3"
+               android:layout_alignStart="@+id/textView2"
+               android:layout_marginTop="21dp"
+               android:textColor="#e53935"/>
+
+           <TextView
+               android:id="@+id/textView5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="     Quantity you want in A jug"
+               android:textSize="20dp"
+               android:textAlignment="center"
+               android:textColor="#f57c00"
+               android:layout_marginTop="15dp"
+               android:layout_below="@+id/editText2"
+               android:layout_alignParentStart="true"
+               android:layout_marginStart="47dp" />
+
+           <EditText
+               android:id="@+id/editText3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:inputType="number"
+               android:text=""
+               android:textAlignment="center"
+               android:layout_marginTop="22dp"
+               android:layout_below="@+id/textView5"
+               android:layout_alignStart="@+id/editText2" />
+       </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout2">
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

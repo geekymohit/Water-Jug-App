@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WaterJug</string>
+    <string name="title_activity_main">Main Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="tab1_string">
+         1.)  Create a variable called NODE-LIST and set it to the initial state.\n
+         2.)  Until a goal state is reached or NODE-LIST is empty.\n
+            \t\t\ta.)  Remove the first element from NODE-LIST and call it E  If NODE-LIST was empty  quit.\n
+            \t\t\tb.)  For each way that each rule can match the state descibed in E do :\n
+                \t\t\t\t\ti.)  Apply the rule to generate a tnew state.\n
+                \t\t\t\t\tii.)   If the new state is a goal state  tquit  and return this state.\n
+                \t\t\t\t\tiii.)   Otherwise  add the new state to the end of NODE-LIST.\n
+    </string>
+    <string name="tab2_string">
+        1.)  If the intital state is a goal state ,quit and return success.\n
+        2.)  Otherwise ,  do the following until success or failure is signaled :\n
+        \t\t\ta.) Generate a successor, E ,of the initial state .If there are no more successor ,signal failure .\n
+        \t\t\tb.) Call Depth-First-Search with E as the initial state .\n
+        \t\t\tc.) If success us returned signal success . Otherwise continue in this loop. "
+    </string>
+    <string name="tab3_string">
+        This is a way of combining the advantages of both types breadth first search and depth first search into a single method.\n\n
+        One way of combining the two is the follow a single path at a time , but switch paths whenever some
+        competing path looks more promising than the current one does .
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main3">Infornmation</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
